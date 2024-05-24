@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Public+Sans:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./sassstyle.css"/>
+    <style>
+      ::placeholder {
+        color: crimson;
+      }
+      .btn{
+        display:flex;
+        justify-content: center;
+      }
+       button{
+        border: 4px solid #fff;
+        padding:10px;
+       border-radius:25px;
+       font-size:20px;
+       font-weight:bold;
+        color:#fff;
+        background-color:crimson;
+        width:200px;
+       }
+       /* button:hover{
+        color:crimson;
+        background-color: white;
+       } */
+      .formCenter {
+        display: flex;
+        justify-content: center;
+        /* align-items:center; */
+        /* height:100vh; */
+      }
+      form {
+        border: 2px solid red;
+        padding: 40px;
+        border-radius: 15px;
+        color: #000;
+        font-size: 20px;
+      }
+      form div input[type="text"] {
+        width: 350px;
+        height: 30px;
+        outline:none;
+      }
+      form div input[type="text"]:focus{
+      border:2px solid red;
+      color:red;
+      font-size:20px;
+      }
+      form div input[type="email"] {
+        width: 350px;
+        height: 30px;
+        outline:none;
+      }
+      form div input[type="email"]:focus{
+      border:2px solid red;
+      color:red;
+      font-size:20px;
+      }
+      form div input[type="number"] {
+        width: 350px;
+        height: 30px;
+        outline:none; 
+      }
+      form div input[type="number"]:focus{
+        /* border:2px solid red; */
+      
+      color:red;
+      font-size:20px;
+      }
+      form textarea {
+        resize: none;
+        overflow-y: scroll;
+        outline:none;
+      }
+      form textarea:focus{
+      /* border:2px solid red; */
+      color:red;
+      }
+      .disno {
+        display: none;
+      }
+      .error{
+       color:red;
+        font-size:15px;
+        margin-top:5px;
+      }
+      .success{
+        border:3px solid green;
+        color:green;
+      }
+      @media screen and (max-width:600px){
+        .formCenter{
+          display:flex;
+        justify-content:center;
+        }
+      form{
+        max-width:300px;
+       
+      }
+      form textarea {
+        resize: none;
+        overflow-y: scroll;
+        outline:none;
+      }
+      input,textarea{
+        max-width:250px;
+      }
+     
+      }
+      @media screen and (max-width:350px){
+        .formCenter{
+          display:flex;
+        justify-content:center;
+        }
+      form{
+        max-width:200px;
+       
+      }
+      form textarea {
+        resize: none;
+        overflow-y: scroll;
+        outline:none;
+      }
+      input,textarea{
+        max-width:180px;
+      }
+      }
+      nav span:nth-child(2) a{
+    
+    color:crimson;
+    
+   }
+   nav span:nth-child(2) a:hover {
+    color:purple;
+   }
+    </style>
+  </head>
+  <body style="background-color: crimson">
+    <nav style="background-color:lavenderblush;">
+      <span style="color:crimson;">RECIPE FINDER APP</span>
+      <span ><a  href="./index.html">Home</a>
+      <a  href="./nutrition.html">Health Tips</a>
+      <a  href="#">Feedback Form</a>
+</span>
+      <div class="hamburger" >
+        <div style="background-color:crimson;" class="hamburgerline"></div>
+        <div style="background-color:crimson;" class="hamburgerline"></div>
+        <div style="background-color:crimson;" class="hamburgerline"></div>
+      </div>
+    </nav>
+ 
+    <h1 style="color: lavenderblush; display: flex; justify-content: center">
+      Feedback Form
+    </h1>
+    <div class="formCenter">
+      <form name="feedback" style="background-color: lavenderblush">
+        <div>
+          <label for="identity">Name (Optional)</label><br /><br />
+          <input
+            id="identity"
+            name="fullname"
+            type="text"
+            placeholder="Enter your FullName"
+          />
+        </div>
+        <br/>
+        <div>
+          <label for="mail">Email (Optional)</label><br /><br/>
+          <input
+            id="mail"
+            name="mailid"
+            type="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <br/>
+        <div>
+          <label for="rate">Rate your overall experience (1-5).<span style="color:red">*</span></label
+          ><br /><br />
+          <input id="rate" name="rating" type="number" placeholder="1-5" />
+          <div class="numcheck"></div>
+        </div>
+        <br/>
+        <div>
+          <label>Were search results relevant?<span style="color:red">*</span></label><br />
+<br/>
+          <input name="search" type="radio" />Yes
+          <span style="padding-left: 40px" ></span><input name="search" type="radio" />No
+          <div class="searchdiv"></div>
+        </div>
+        <br />
+        <div>
+          <label>Any difficulties in finding recipes?If yes,describe.<span style="color:red">*</span> </label><br /><br/>
+          <input  id="describe" name="diff" type="radio" />Yes
+          <span style="padding-left: 40px"
+            ><input  id="describeno" name="diff" type="radio" />No</span>
+          <div class="diffdiv"></div>
+          <textarea
+            class="disno"
+            placeholder="Enter your feedback briefly"
+            cols="60"
+            rows="8"
+          ></textarea>
+          <div class="disno1"></div>
+        </div>
+        <br />
+        <div>
+          <label>Were recipe details clear and useful?<span style="color:red">*</span></label><br /><br/>
+          <input  name="use" type="radio" />Yes
+          <span style="padding-left: 40px"
+            ><input name="use" type="radio" />No</span
+          >
+          <div class="usediv"></div>
+        </div>
+        <br />
+        <div>
+          <label>Any features you’d like added?<span style="color:red">*</span> </label><br /><br/>
+          <textarea
+          class="feature1"
+            placeholder="we are grateful to hear your suggestions!"
+            rows="8"
+            cols="60"
+          ></textarea>
+          <div class="feature2"></div>
+        </div>
+        <br/>
+        <div>
+          <label>Any other comments or feedback?<span style="color:red">*</span></label><br /><br/>
+          <textarea
+          class="comment1"
+            placeholder="we are grateful to hear your suggestions!"
+            rows="8"
+            cols="60"
+          ></textarea>
+          <div class="comment2"></div>
+        </div><br/>
+        <div class="btn">
+        <button type="submit">Submit</button></div>
+      </form>
+    </div>
+
+    <script>
+      let inputEl = document.getElementById("describe");
+      let disnoEl = document.querySelector(".disno");
+     let disno1El=document.querySelector(".disno1");
+      
+      inputEl.addEventListener("click", () => {
+        disnoEl.style.cssText = "display:block";
+        disno1El.style.cssText="display:block";
+      });
+      let noEl = document.getElementById("describeno");
+      noEl.addEventListener("click", () => {
+        disnoEl.style.cssText = "display:none";
+        disno1El.style.cssText="display:none";
+      });
+    
+   
+    let formEl=document.forms.feedback;
+    function setError(element1,element2,message){
+      element1.innerText=message;
+      element2.classList.remove("success");
+      element2.style.border="2px solid red";
+      element1.classList.add("error");
+    }
+    function setSuccess(element1,element2){
+      element1.classList.remove("error");
+      element1.innerText=" ";
+      element2.classList.add("success");
+      element2.style.border="2px solid green";
+    }
+ function validateInputs(){
+  // rating
+      let numEl=document.querySelector("input[type=number]");
+      let numcheckEl=document.querySelector(".numcheck");
+      if(numEl.value<1 || numEl.value>5){
+      setError(numcheckEl,numEl,"This field is required ! Only rate from 1 to 5")
+    }
+    else{ 
+      setSuccess(numcheckEl,numEl)
+    }
+
+    let searchEl=document.querySelectorAll('input[name="search"]');
+     let searchdivEl=document.querySelector(".searchdiv");
+ if(!searchEl[0].checked && !searchEl[1].checked){
+   searchdivEl.innerText="Please choose an option";
+   searchdivEl.classList.add("error");
+ }
+ else{
+  searchdivEl.innerText="Thankyou for your input!";
+  searchdivEl.style.color="green";
+  searchdivEl.style.fontSize="15px";
+ }
+
+ 
+ let diffEl=document.querySelectorAll('input[name="diff"]');
+     let diffdivEl=document.querySelector(".diffdiv");
+ if(!diffEl[0].checked && !diffEl[1].checked){
+   diffdivEl.innerText="Please choose an option";
+   diffdivEl.classList.add("error");
+ }
+ else{
+  if(diffEl[0].checked){
+    if(disnoEl.value.length<20){
+      setError(disno1El,disnoEl,"minimum of 20 characters is needed!")
+    }
+    else{ 
+      setSuccess(disno1El,disnoEl);
+    } 
+  }
+  else{
+  diffdivEl.innerText="Thankyou for your input!";
+  diffdivEl.style.color="green";
+  diffdivEl.style.fontSize="15px";
+  }
+ }
+
+ let useEl=document.querySelectorAll('input[name="use"]');
+     let usedivEl=document.querySelector(".usediv");
+ if(!useEl[0].checked && !useEl[1].checked){
+   usedivEl.innerText="Please choose an option";
+   usedivEl.classList.add("error");
+ }
+ else{
+  usedivEl.classList.remove("error");
+  usedivEl.innerText="Thankyou for your input!";
+  usedivEl.style.color="green";
+  usedivEl.style.fontSize="15px";
+ }
+ let feature1El=document.querySelector(".feature1");
+ let feature2El=document.querySelector(".feature2");
+ if(feature1El.value.length<20 ){
+      setError(feature2El,feature1El,"minimum of 20 characters is needed!");
+    }
+    else{ 
+      setSuccess(feature2El,feature1El);
+    } 
+    let comment1El=document.querySelector(".comment1");
+ let comment2El=document.querySelector(".comment2");
+ if(comment1El.value.length<20){
+      setError(comment2El,comment1El,"minimum of 20 characters is needed!")
+    }
+    else{ 
+      setSuccess(comment2El,comment1El);
+    } 
+
+
+
+ }
+  
+
+
+
+   formEl.addEventListener("submit",()=>{
+    event.preventDefault();
+validateInputs();
+
+   })
+
+  let hamburgerEl=document.querySelector(".hamburger");
+  let list=document.querySelector("nav span:nth-child(2)");
+  hamburgerEl.addEventListener("click",()=>{
+    if(list.style.display=="none"){
+list.style.display="block";}
+    else{
+      list.style.display="none"
+    }
+  })
+
+    </script>
+  </body>
+</html>

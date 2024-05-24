@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutritional Tips</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Public+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      span{
+        color:crimson;
+      }
+    </style>
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#myScrollspy"
+    data-bs-offset="0"
+    tabindex="0"
+  >
+    <header>
+      <nav
+        id="myScrollspy"
+        class="navbar navbar-expand-lg navbar-dark  fixed-top"
+        style="background-color: crimson;"
+      >
+        <div class="container">
+          <a href="/" class="navbar-brand"> Nutritional tips</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#myNavBar"
+            aria-controls="myNavBar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="myNavBar">
+            <ul class="navbar-nav ms-auto">
+             
+              <li class="nav-item">
+                <a href="#mealsection" class="nav-link active">Meal Planning</a>
+              </li>
+              <li class="nav-item">
+                <a href="#dietsection" class="nav-link active">Balanced Diet</a>
+              </li>
+              <li class="nav-item">
+                <a href="#microsection" class="nav-link">Micronutrients</a>
+              </li>
+              <li class="nav-item">
+                <a href="#hydrationsection" class="nav-link">Hydration</a>
+              </li>
+              <li class="nav-item">
+                <a href="#mindsection" class="nav-link">Mindful Eating</a>
+              </li>
+              <li class="nav-item">
+                <a href="#snacksection" class="nav-link">Snacking</a>
+              </li>
+
+              <li class="nav-item">
+              <a  class="nav-link" href="./index.html" style="color:yellow">Home</a></li>
+              <li class="nav-item "> <a  class="nav-link" href="./feedback.html" style="color:yellow">Feedback Form</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="text-center">
+      <section
+        id="mealsection"
+        style="
+          /* height: 400px; */
+          padding: 100px 10px;
+          background-color: lavenderblush;
+          color: crimson;
+        "
+      >
+        <button
+          class="btn btn-danger p-3 mb-3 rounded-pill"
+          style="border-radius: 50px; font-size: 20px; font-weight: bold"
+        >
+          Meal Planning
+        </button>
+        <p>
+          Meal planning offers numerous benefits, including organization,
+          time-saving, healthier choices, portion control, budget-friendliness,
+          variety, and customization. It helps you stay organized throughout the
+          week, streamlines grocery shopping and meal preparation, ensures
+          balanced and nutritious meals, prevents overeating, saves money by
+          reducing food waste and impulse purchases, allows for culinary
+          experimentation, and accommodates dietary preferences and
+          restrictions. Overall, incorporating meal planning into your routine
+          can lead to healthier eating habits and make it easier to achieve your
+          nutritional goals
+        </p>
+
+        <button
+          type="button"
+          class="btn btn-outline-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#mealplantips"
+        >
+          View Tips
+        </button>
+
+        <div
+          class="modal fade"
+          id="mealplantips"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLongTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="mealplan">Meal Planning Tips</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-dark">
+                🍇Meal planning can help you stay organized, save time, and ensure
+                balanced meals:<br>
+                 <span>Plan Ahead: </span><br/>✨Set aside time each week to plan
+                your meals and snacks. Write down your meals and create a
+                shopping list. ✍️<br/><br/>
+                <span>Balanced Meals: </span><br/>Ensure each meal includes a
+                source of protein, whole grains, and plenty of fruits and
+                vegetables. <br/><br/>
+                <span>Prep in Advance: </span><br/>Prepare ingredients or cook meals
+                in advance to save time during the week. For example, wash and
+                chop vegetables, cook grains, and portion out snacks. <br/><br/><span>Variety:</span><br/>
+                Incorporate a variety of foods to keep meals interesting and
+                ensure a range of nutrients.<br/><br/><span>Portion Control:</span><br/>  Plan appropriate
+                portion sizes to avoid overeating. <br/><br/><span>Leftovers: </span><br/>Use leftovers
+                creatively to reduce waste and save time. <br/>For example, use
+                leftover roasted vegetables in a salad or wrap.<br/><br/>
+                <span>Example Meal 
+                Plan:</span><br/>
+                 <span>Breakfast:</span> Overnight oats with berries and nuts. Smoothie
+                with spinach, banana, protein powder, and almond milk.<br/><br/><span> Lunch:</span>
+                Quinoa salad with mixed greens, chickpeas, cherry tomatoes,
+                cucumber, and lemon-tahini dressing. Grilled chicken breast with
+                steamed broccoli and brown rice. <br/><br/><span>Dinner: </span>Baked salmon with
+                roasted sweet potatoes and mixed vegetable stir-fry. Vegetable
+                stir-fry with tofu over brown rice or whole-grain noodles.<br/><br/>
+                <span>Snacks:</span> Greek yogurt with nuts and honey. Apple slices with
+                peanut butter.<br/><br/><span>By following these tips and incorporating meal
+                planning into your routine, you can improve your nutritional
+                habits, support overall health, and enjoy a balanced, mindful
+                approach to eating.</span> 
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<hr style="height:5px;background-color: crimson;" />
+      <section
+        id="dietsection"
+        style="
+          /* height: 400px; */
+          padding: 100px 10px;
+          background-color: lavenderblush;
+          color: crimson;
+        "
+      >
+        <button
+          class="btn btn-danger p-3 mb-3 rounded-pill"
+          style="border-radius: 50px; font-size: 20px; font-weight: bold"
+        >
+          Balanced Diet
+        </button>
+        <p>
+          Maintaining a balanced diet involves consuming the right proportions
+          of different food groups to ensure that your body gets the essential
+          nutrients it needs to function optimally. These food groups include
+          fruits, vegetables, proteins, grains, and dairy. Each group provides
+          different vital nutrients and benefits that contribute to overall
+          health and well-being.
+        </p>
+
+        <button
+          type="button"
+          class="btn btn-outline-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModalLong"
+        >
+          View Tips
+        </button>
+
+        <div
+          class="modal fade"
+          id="exampleModalLong"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLongTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">
+                  Balanced Diet Tips
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-dark">
+                <span>Fruits and Vegetables:🥕</span><br/><br/> <span>Benefits: </span>Rich in vitamins, minerals,
+                antioxidants, and fiber. <br/><span>Tip:</span> Aim to fill half your plate with a
+                variety of colorful fruits and vegetables.<br/><span>Examples:</span>  Apples,
+                berries, spinach, carrots, broccoli. <br/><br/><span>Proteins:</span><br/><br/><span> Benefits:</span>
+                Necessary for muscle repair and growth. <br/><span>Tip: </span>Include a mix of
+                animal and plant-based proteins.<br/><span> Examples: </span>Lean meats, fish,
+                eggs, beans, nuts, seeds.<br/><br/><span>Grains: </span><br/><br/><span> Benefits:</span> Provide energy
+                through carbohydrates. <br/><span>Tip:</span> Choose whole grains over refined
+                grains for more nutrients and fiber. <br/><span>Examples:</span> Brown rice, oats,
+                quinoa, whole wheat bread.<br/><br/><span>Dairy (or Alternatives):</span>  <br/><span>Benefits:</span>
+                Important for calcium and vitamin D.<br/><span> Tip:</span> Include dairy or
+                fortified plant-based alternatives daily. <br/><span> Examples:</span> Milk,
+                yogurt, cheese, almond milk, soy milk.
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr style="height:5px;background-color: crimson;" />
+      <section
+        id="microsection"
+        style="
+          /* height: 400px; */
+          padding: 100px 10px;
+          background-color: lavenderblush;
+          color: crimson;
+        "
+      >
+        <button
+          class="btn btn-danger p-3 mb-3 rounded-pill"
+          style="border-radius: 50px; font-size: 20px; font-weight: bold"
+        >
+          MicroNutrients
+        </button>
+        <p>
+          Micronutrients, such as vitamins and minerals, play vital roles in
+          numerous bodily functions. They support processes like immune
+          function, energy production, bone health, and cell repair. Without an
+          adequate intake of micronutrients, various health issues can arise,
+          including weakened immunity, fatigue, and impaired cognitive function.
+          Therefore, ensuring a balanced diet rich in micronutrient-dense foods
+          is essential for overall health and well-being.
+        </p>
+
+        <button
+          type="button"
+          class="btn btn-outline-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#micronutrientstips"
+        >
+          View Tips
+        </button>
+
+        <div
+          class="modal fade"
+          id="micronutrientstips"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLongTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="micronutrients">
+                  Micronutrients Tips
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-dark">
+                <span>Vitamins: 🍒</span><br/><br/><span>Vitamin A:</span> Vision and immune function (found in
+                carrots, sweet potatoes, spinach).<br/><span> Vitamin C:</span> Immune system and
+                skin health (found in citrus fruits, strawberries, bell
+                peppers).<br/><span> Vitamin D:</span> Bone health and calcium absorption (found
+                in fortified dairy products, sunlight). <br/><span>Vitamin E:</span> Antioxidant
+                (found in nuts, seeds, green leafy vegetables). <br/><span>Vitamin K: </span>Blood
+                clotting (found in kale, spinach).<br/><br/><span> Minerals: </span><br/><br/><span>Calcium:</span> Strong
+                bones and teeth (found in dairy products, fortified
+                alternatives). <br/><span>Iron:</span> Blood health (found in red meat, beans,
+                lentils).<br/><span> Magnesium:</span> Muscle and nerve function (found in nuts,
+                seeds, whole grains).<br/><span>Zinc: </span> Immune function and wound healing
+                (found in meat, shellfish, legumes).
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr style="height:5px;background-color: crimson;" />
+      <section
+        id="hydrationsection"
+        style="
+          /* height: 400px; */
+          padding: 100px 10px;
+          background-color: lavenderblush;
+          color: crimson;
+        "
+      >
+        <button
+          class="btn btn-danger p-3 mb-3 rounded-pill"
+          style="border-radius: 50px; font-size: 20px; font-weight: bold"
+        >
+          Hydration
+        </button>
+        <p>
+          Proper hydration is essential for overall health as it plays a
+          critical role in maintaining various bodily functions. Adequate water
+          intake helps regulate body temperature, ensuring that your body
+          remains at an optimal temperature regardless of external conditions.
+          It also aids in joint lubrication, which is crucial for smooth and
+          pain-free movement. Additionally, hydration is vital for nutrient
+          transport, as water helps dissolve and carry nutrients to cells
+          throughout the body while also assisting in the removal of waste
+          products. Staying well-hydrated can improve physical performance,
+          cognitive function, and overall energy levels, making it a cornerstone
+          of good health.
+        </p>
+
+        <button
+          type="button"
+          class="btn btn-outline-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#hydrationtips"
+        >
+          View Tips
+        </button>
+
+        <div
+          class="modal fade"
+          id="hydrationtips"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLongTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="hydration">Hydration Tips</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-dark">
+                <span>Daily Intake:</span><br/><br/>🧊 Aim for at least 8 glasses (2 liters) of water per
+                day. <br/>🧊Adjust based on activity level and climate.<br/><br/><span>Sources:</span> <br/><br/> Water,
+                herbal teas, fruits (watermelon, oranges), and vegetables
+                (cucumbers, tomatoes).<br/><br/><span> Signs of Dehydration: </span><br/><br/>Thirst, dark yellow
+                urine, dry skin, fatigue, dizziness.
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr style="height:5px;background-color: crimson;" />
+      <section
+        id="mindsection"
+        style="
+          /* height: 400px; */
+          padding: 100px 10px;
+          background-color: lavenderblush;
+          color: crimson;
+        "
+      >
+        <button
+          class="btn btn-danger p-3 mb-3 rounded-pill"
+          style="border-radius: 50px; font-size: 20px; font-weight: bold"
+        >
+          Mindful Eating
+        </button>
+        <p>
+          Mindful eating involves paying full attention to the experience of
+          eating and drinking, which includes noticing the colors, smells,
+          textures, and flavors of your food. It also means being aware of your
+          body's hunger and fullness signals, eating slowly to savor each bite,
+          and avoiding distractions like TV or smartphones while eating. This
+          practice can enhance your enjoyment of food, improve digestion, and
+          help you develop a healthier relationship with food by promoting
+          awareness of your eating habits and reducing overeating.
+        </p>
+
+        <button
+          type="button"
+          class="btn btn-outline-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#mindfuleatingtips"
+        >
+          View Tips
+        </button>
+
+        <div
+          class="modal fade"
+          id="mindfuleatingtips"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLongTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="mindfuleating">
+                  Mindful Eating Tips
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-dark">
+               <span> Eat Slowly:</span><br/> Chew thoroughly to aid digestion and enjoy flavors.<br/><br/>
+                <span>Listen to Hunger Cues:</span><br/> Eat when hungry, stop when full.Avoid
+                emotional eating.<br/><br/> <span> Avoid Distractions:</span><br/> Focus on the food, not on
+                TV or phones. <br/><br/><span>Savor Your Food: </span><br/>Notice the texture, taste, and
+                smell for enhanced satisfaction.
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr style="height:5px;background-color: crimson;" />
+      <section
+        id="snacksection"
+        style="
+          /* height: 400px; */
+          padding: 100px 10px;
+          background-color: lavenderblush;
+          color: crimson;
+        "
+      >
+        <button
+          class="btn btn-danger p-3 mb-3 rounded-pill"
+          style="border-radius: 50px; font-size: 20px; font-weight: bold"
+        >
+          Snacking
+        </button>
+        <p>
+          Healthy snacking can help maintain energy levels throughout the day
+          and prevent overeating at main meals. By choosing nutritious snacks
+          like fruits, vegetables, nuts, and yogurt, you provide your body with
+          a steady supply of essential nutrients and energy. This can keep you
+          feeling satisfied and focused, reducing the likelihood of experiencing
+          energy slumps or reaching for unhealthy, high-calorie foods.
+          Additionally, healthy snacking can help regulate blood sugar levels
+          and curb excessive hunger, making it easier to manage portion sizes
+          and make healthier food choices at meal times.
+        </p>
+
+        <button
+          type="button"
+          class="btn btn-outline-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#snackingtips"
+        >
+          View Tips
+        </button>
+
+        <div
+          class="modal fade"
+          id="snackingtips"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLongTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="snacking">
+                  Snacking Tips
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-dark">
+                <span>Healthy Snack Options:</span>
+<br/><br/>
+                <span>Fruits🍉:</span><br/> Fresh fruits like apples, berries, grapes.<br/><br/>
+                <span>Vegetables🍆: </span><br/>Raw vegetables like carrots, cucumbers, bell peppers.<br/><br/>
+                <span>Nuts and Seeds🥜:</span><br/> Almonds, walnuts, sunflower seeds.<br/><br/>
+                <span>Dairy or Alternatives🥛:</span><br/> Greek yogurt, cottage cheese, cheese slices.<br/><br/>
+                <span>Whole Grains🌾:</span><br/> Whole grain crackers, rice cakes with healthy toppings.<br/><br/>
+                <span>Portion Control:</span><br/> Keep snacks small and avoid eating from large packages.<br/><br/>
+                <span>Balanced Snacks:</span><br/> Combine protein, fiber, and healthy fats.<br/><br/>
+                 <span>Examples: </span><br/>apple slices with peanut butter, whole grain crackers with cheese.<br/><br/>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr style="height:5px;background-color: crimson;" />
+    </main>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+      const baldiettipsEl = document.getElementById("baldiettips");
+      const baldietEl = document.getElementById("baldiet");
+
+      baldiettipsEl.addEventListener("shown.bs.modal", () => {
+        baldietEl.focus();
+      });
+
+      const mealplantips = document.getElementById("mealplantips");
+      const mealplan = document.getElementById("mealplan");
+
+      mealplantips.addEventListener("shown.bs.modal", () => {
+        mealplan.focus();
+      });
+
+      const micronutrientstipsEl =
+        document.getElementById("micronutrientstips");
+      const micronutrientsEl = document.getElementById("micronutrients");
+
+      micronutientstipsEl.addEventListener("shown.bs.modal", () => {
+        micronutrientsEl.focus();
+      });
+
+      const hydrationtipsEl = document.getElementById("hydrationtips");
+      const hydrationEl = document.getElementById("hydration");
+
+      hydrationtipsEl.addEventListener("shown.bs.modal", () => {
+        hydrationEl.focus();
+      });
+
+      const mindfuleatingtipsEl = document.getElementById("mindfuleatingtips");
+      const mindfuleatingEl = document.getElementById("mindfuleating");
+
+      mindfuleatingtipsEl.addEventListener("shown.bs.modal", () => {
+        mindfuleatingEl.focus();
+      });
+
+      const snackingtipsEl = document.getElementById("snackingtipstips");
+      const snackingEl = document.getElementById("snacking");
+
+      snackingtipsEl.addEventListener("shown.bs.modal", () => {
+        snackingEl.focus();
+      });
+    </script>
+  </body>
+</html>

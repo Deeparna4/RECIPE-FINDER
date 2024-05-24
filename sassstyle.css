@@ -1,0 +1,66 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: crimson;
+  padding: 6px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+nav .hamburger {
+  display: none;
+}
+nav span:nth-child(1) {
+  padding-top: 10px;
+  color: #fff;
+}
+nav a {
+  text-decoration: none;
+  padding-top: 9px;
+  padding-left: 10px;
+  padding-right: 30px;
+  color: #fff;
+  display: inline-block;
+}
+nav a:hover {
+  color: purple;
+}
+nav .colour {
+  border: none;
+  display: inline;
+  padding: 0px 10px;
+  color: #fff;
+  margin-right: 0;
+  font-size: 16px;
+  font-family: "Platypi", serif;
+}
+nav .colour:hover {
+  color: purple;
+}
+
+@media screen and (max-width: 750px) {
+  nav span:nth-child(2) {
+    margin-top: 40px;
+    display: none;
+  }
+  nav span:nth-child(2) a, button {
+    display: block;
+    text-align: center;
+  }
+  nav .hamburger {
+    display: block;
+    margin-top: 11px;
+  }
+  nav .hamburger .hamburgerline {
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #fff;
+  }
+}
+
+/*# sourceMappingURL=sassstyle.css.map */

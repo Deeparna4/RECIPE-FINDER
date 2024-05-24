@@ -1,0 +1,339 @@
+
+.search i{
+    color:crimson;
+}
+.search i:hover{
+    color:black;
+}
+#theme{
+    padding:10px;
+    border-radius:20px;
+    background-color: crimson;
+    outline:none;
+    /* color:beige; */
+    top:20px;
+} 
+
+.search input{
+    height:30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border:2px solid crimson;
+    
+    width:500px;
+   }
+   .search input:focus {
+       border: 4px solid crimson;
+       outline: none;
+       color:red;
+       font-size:20px;
+       padding-left:20px;
+     }
+   .search button{
+   border-bottom-right-radius: 30px;
+   border-top-right-radius: 30px;
+   background-color: salmon;
+   border:2px solid crimson;
+   
+   }
+   .search button:hover{
+       background-color: crimson; 
+   }
+.receipe{
+    position:fixed; 
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+   padding:20px;
+    /* max-width:700px;
+   margin:auto;  */
+   background-color: crimson;
+   color:#fff;  
+   text-align:center;
+   width:80%; 
+    height:80%; 
+    overflow-y:scroll; 
+}
+
+.receipe::-webkit-scrollbar{
+    width:12px;
+}
+.receipe::-webkit-scrollbar-thumb{
+    background:lavenderblush;
+}
+
+.food-name{
+    font-size:30px;
+}
+.video-link a{
+    text-decoration: none;
+    color:#fff;
+    transition:all 0.3s;
+}
+.video-link a:hover{
+    color:blue;
+}
+.video-link a i{
+    padding-left:5px;
+}
+.instruction p{
+  font-size:12px;
+}
+.receipe-btn{
+    color:crimson;
+    border-radius:2px;
+}
+.receipe-btn:hover{
+    background-color: red;
+    color:black;
+}
+/* .dish p{
+    display:flex;
+
+   flex-wrap:wrap; 
+} */
+
+@media screen and (min-width:1023px){
+    .food-para{
+        display:flex;
+        justify-content:center;
+        text-align:center;
+        color:crimson;
+       
+        }
+   .receipe{
+    width:60%;
+    height:80%;
+    overflow-y:scroll;
+   }
+   
+    .heading{
+     display: flex;
+     justify-content: center;
+    }
+    .paratha{
+     width:"80px";
+      height:"80px";
+      
+      margin-right:10px;
+      margin-top: 20px;
+      border-radius:50%;
+ }
+ .samosa{
+     width:"80px";
+      height:"80px" ;
+      
+      margin-left:10px;
+      margin-top:20px;
+      border-radius:50%;
+ }
+h1{
+
+ font-size:45px;
+ color:crimson;
+}
+
+
+blockquote{
+ margin:auto;
+ max-width:500px;
+ background-color: lightsalmon;
+ color:darkred;
+ border:2px solid crimson;
+ padding-left:150px;
+}
+cite{
+ padding-left:200px;
+}
+.search{
+ display:flex;
+ justify-content:center;
+
+}
+
+.dish{
+ display: flex;
+ justify-content:center;
+ flex-wrap:wrap; 
+  gap:90px;
+}
+}
+
+
+
+
+
+@media screen and (max-width:416px){
+    .receipe{
+        overflow-y:scroll;
+       }
+    .heading h1{
+        font-size:32px;
+     }
+    .dish div{
+      
+       width:70%;
+       height:350px;
+       margin:0 auto;
+       text-align:center;
+   } 
+   .dish div img{
+       width:100%;
+       display:block;
+   }  
+   .search{
+       display:flex;
+      justify-content:center; 
+   }
+   .search input{
+       width:80px;
+   }
+  
+   .food-para{
+    text-align: center;
+   }
+   
+   .paratha{
+    display:none;
+}
+.samosa{
+    display:none;
+} 
+.quote cite{
+    padding-left:0px;
+}
+
+  
+}
+@media screen and (max-width:616px){
+    .image{
+        height:150px;
+    }
+    .receipe{
+        overflow-y:scroll;
+       }
+    .dish div{
+      
+       width:70%;
+       height:350px;
+       margin:0 auto;
+       text-align:center;
+   } 
+   .dish div img{
+       width:100%;
+       display:block;
+   }  
+   .search{
+       display:flex;
+      justify-content:center; 
+   }
+   .search input{
+       width:80px;
+   }
+   .food-para{
+    text-align: center;
+   }
+   
+   .paratha{
+    display:none;
+}
+.samosa{
+    display:none;
+}
+.quote{
+    display:flex;
+    justify-content:center;
+    margin:auto;
+    max-width:500px;
+    background-color: lightsalmon;
+    color:darkred;
+    border:2px solid crimson;
+  }
+  
+     cite{
+        padding-left:200px;
+    }  
+  
+}
+
+@media screen and (max-width:1023px){
+    .receipe{
+        overflow-y:scroll;
+       }
+     .container{
+        margin:20px;
+        /* width:100%; */
+    } 
+    .search{
+        display:flex;
+        justify-content:center;
+       
+    }
+    .search input{
+        height:30px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border:2px solid crimson;
+        
+        width:500px;
+    }
+    .search button{
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: salmon;
+    border:2px solid crimson;
+    
+    }
+    h1{
+        display:flex;
+        justify-content: center;
+       font-size:40px;
+        color:crimson;  
+    }
+    .heading{
+        display:flex;
+        justify-content:center;
+       }
+    .paratha{
+        width:50px;
+         height:50px;
+        
+         margin-right:10px;
+         margin-top: 27px;
+         border-radius:50%;
+    }
+    .samosa{
+        width:50px;
+         height:50px ;
+       
+         margin-left:10px;
+         margin-top:27px;
+         border-radius:50%;
+    }
+    .food-para{ 
+      
+         text-align:center; 
+        padding:0px 20px;
+        color:crimson;  
+    }
+    .dish{
+        display: flex;
+        justify-content:center;
+        flex-wrap:wrap; 
+         gap:90px;
+    }
+  .quote{
+    display:flex;
+    justify-content:center;
+    margin:auto;
+    max-width:500px;
+    background-color: lightsalmon;
+    color:darkred;
+    border:2px solid crimson;
+  }
+   
+     cite{
+        padding-left:200px;
+    }  
+  
+}

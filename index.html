@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasty recipes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./sassstyle.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Public+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Platypi", serif;
+      }
+      ::placeholder {
+        color: crimson;
+      }
+    </style>
+  </head>
+  <body style="background-color: lavenderblush">
+    <nav>
+      <span>RECIPE FINDER APP</span>
+      <span><a href="#">Home</a>
+      <a href="./nutrition.html">Health Tips</a>
+      <a href="./feedback.html">Feedback Form</a>
+      <button id="theme" class="colour">Change theme</button></span>
+      <div class="hamburger">
+        <div class="hamburgerline"></div>
+        <div class="hamburgerline"></div>
+        <div class="hamburgerline"></div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="heading">
+        <img
+          class="paratha"
+          src="https://static.toiimg.com/thumb/55453664.cms?width=1200&height=900"
+          width="80px"
+          height="80px"
+        />
+        <h1>RECIPE FINDER</h1>
+        <img
+          class="samosa"
+          src="https://i.pinimg.com/originals/a8/07/d8/a807d8a466a1a2710aeccbbfad355410.jpg"
+          width="80px"
+          height="80px"
+        />
+      </div>
+<div class="food-para">
+      <p >
+        Welcome to our recipe finder app! It's like having a magic cookbook in
+        your pocket. Whether you're a cooking pro or just starting out, we've
+        got something for everyone. Explore tasty dishes from around the world,
+        from hearty meals to sweet treats. Our app is easy to use and full of
+        delicious ideas. Join our food-loving community and start cooking up a
+        storm today!
+      </p>
+    </div>
+      <br />
+     
+      <div class="quote">
+        <blockquote>
+          Food is symbolic of love when words are inadequate.<br /><cite
+            >- Alan D. Wolfelt</cite
+          >
+        </blockquote>
+        <br />
+      </div>
+      <br />
+      <div class="search">
+        <input type="text" placeholder="    search by main ingredient" />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+   
+      <br /><br /><br />
+
+
+      <div class="dish">
+      <img src="https://static.toiimg.com/photo/72023714.cms" width="90%" height="auto"/>
+      </div>
+      
+      <div class="receipe" style="display:none;">
+       
+          <button class="image" type="button" class="receipe-btn" id="btn-receipe"><i class="fa-solid fa-xmark"></i></button>
+        <h2 class="food-name">Potato fry</h2>
+        <p class="category-name">Vegetable</p>
+        <div class="instruction">
+          <h3>Instructions:</h3>
+          <p>
+            **Preparation:** 1. Wash and peel the potatoes. Cut them into thin
+            slices or small cubes for faster cooking. 
+            **Cooking:** 1. Heat oil
+            in a large frying pan over medium heat. 2. Add cumin and mustard
+            seeds; let them splutter. 3. Add the potatoes and stir to coat with
+            oil and spices.
+             **Spices:** 1. Add turmeric powder, red chili
+            powder, and salt. Mix well. **Cooking:** 1. Reduce heat to
+            medium-low. Cover and cook for 15-20 minutes, stirring occasionally.
+            2. For extra crispiness, cook uncovered for the last few minutes.
+            **Final Touch:** 1. Sprinkle garam masala (if using) and stir. 2.
+            Garnish with chopped coriander leaves if desired.
+             **Serve:** 1.
+            Serve hot as a side dish with rice, roti, or as a snack.
+             **Tips:**
+            1. Add chopped onions and garlic before potatoes for extra flavor.
+            2. Adjust spices to taste. 3. Include other vegetables like bell
+            peppers or peas for variation. Enjoy your delicious and simple
+            potato fry!
+          </p>
+        </div>
+        <div class="food-image">
+          <img src="https://img.freepik.com/premium-photo/fry-potato-with-red-pepper-plate-spicy-asian-food_175356-9040.jpg?w=996" alt="potato fry "   width="200px"
+          height="200px" style="border-radius: 50%;"/>
+        </div>
+        <div class="video-link">
+          <a href="#">View and explore videos on this recipe!<i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+        </div>
+      </div>
+    
+  </div>
+<script>
+  let hamburgerEl=document.querySelector(".hamburger");
+  let list=document.querySelector("nav span:nth-child(2)");
+  hamburgerEl.addEventListener("click",()=>{
+    if(list.style.display=="none"){
+list.style.display="block";}
+    else{
+      list.style.display="none"
+    }
+  })
+ 
+</script>
+    <script src="./script.js"></script>
+  </body>
+</html>
